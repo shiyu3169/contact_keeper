@@ -1,11 +1,10 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import Contacts from '../contacts/Contacts';
-import ContactForm from '../contacts/ContactForm';
+import React from "react";
+import Contacts from "../contacts/Contacts";
+import ContactForm from "../contacts/ContactForm";
 
 const Home = props => {
   return (
-    <div className='grid-2'>
+    <div className="grid-2">
       <div>
         <ContactForm />
       </div>
@@ -15,7 +14,5 @@ const Home = props => {
     </div>
   );
 };
-
-Home.propTypes = {};
 
 export default Home;
