@@ -42,14 +42,8 @@ const AuthState = props => {
 
   // Register User
   const register = async formData => {
-    const config = {
-      headers: {
-        "Content-Type": "application/json"
-      }
-    };
-
     try {
-      const res = await axios.post("/api/users", formData, config);
+      const res = await axios.post("/api/users", formData);
       dispatch({
         type: REGISTER_SUCCESS,
         payload: res.data
@@ -66,14 +60,8 @@ const AuthState = props => {
 
   // Login User
   const login = async formData => {
-    const config = {
-      headers: {
-        "Content-Type": "application/json"
-      }
-    };
-
     try {
-      const res = await axios.post("/api/auth", formData, config);
+      const res = await axios.post("/api/auth", formData);
 
       dispatch({
         type: LOGIN_SUCCESS,
