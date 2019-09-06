@@ -45,5 +45,7 @@ export default (state, action) => {
         user: null,
         error: action.payload
       };
+    default:
+      return state;
   }
 };
