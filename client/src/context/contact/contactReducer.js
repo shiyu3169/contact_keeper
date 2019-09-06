@@ -23,6 +23,9 @@ export default (state, action) => {
       return {
         ...state,
         contacts: null,
+        filtered: null,
+        error: null,
+        current: null,
         loading: false
       };
     case ADD_CONTACT:
